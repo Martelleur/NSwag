@@ -11,6 +11,8 @@ private string ConvertToString(object value, System.Globalization.CultureInfo cu
 
     if (value is System.Enum)
     {
+        Console.WriteLine("value:")
+        Console.WriteLine(value)
         var name = System.Enum.GetName(value.GetType(), value);
         if (name != null)
         {

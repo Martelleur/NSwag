@@ -1,10 +1,10 @@
 {
-  "runtime": "WinX64",
+  "runtime": "Net90",
   "defaultVariables": null,
   "documentGenerator": {
     "fromDocument": {
       "json": "",
-      "url": "openapi/swagger.json",
+      "url": "swagger.json",
       "output": null,
       "newLineBehavior": "Auto"
     }
@@ -94,7 +94,7 @@
       "templateDirectory": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": "openapi/Client.cs",
+      "output": "Client.cs",
       "newLineBehavior": "Auto"
     }
   }

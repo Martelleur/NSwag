@@ -7,9 +7,7 @@
   "paths": {
     "/api/activities/{id}": {
       "get": {
-        "tags": [
-          "Activity"
-        ],
+        "tags": ["Activity"],
         "parameters": [
           {
             "name": "id",
@@ -35,9 +33,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Activity"
-        ],
+        "tags": ["Activity"],
         "parameters": [
           {
             "name": "id",
@@ -87,9 +83,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Activity"
-        ],
+        "tags": ["Activity"],
         "parameters": [
           {
             "name": "id",
@@ -132,9 +126,7 @@
         }
       },
       "patch": {
-        "tags": [
-          "Activity"
-        ],
+        "tags": ["Activity"],
         "parameters": [
           {
             "name": "id",
@@ -198,9 +190,7 @@
     },
     "/api/activities": {
       "post": {
-        "tags": [
-          "Activity"
-        ],
+        "tags": ["Activity"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -241,9 +231,7 @@
     },
     "/api/auth/login": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -294,9 +282,7 @@
     },
     "/api/auth/logout": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -330,9 +316,7 @@
     },
     "/api/auth/refresh": {
       "post": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -383,9 +367,7 @@
     },
     "/api/auth/roles": {
       "get": {
-        "tags": [
-          "Auth"
-        ],
+        "tags": ["Auth"],
         "responses": {
           "200": {
             "description": "OK"
@@ -395,9 +377,7 @@
     },
     "/api/courses": {
       "get": {
-        "tags": [
-          "Course"
-        ],
+        "tags": ["Course"],
         "parameters": [
           {
             "name": "search",
@@ -466,9 +446,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Course"
-        ],
+        "tags": ["Course"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -509,9 +487,7 @@
     },
     "/api/courses/{id}": {
       "get": {
-        "tags": [
-          "Course"
-        ],
+        "tags": ["Course"],
         "parameters": [
           {
             "name": "id",
@@ -537,9 +513,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Course"
-        ],
+        "tags": ["Course"],
         "parameters": [
           {
             "name": "id",
@@ -589,9 +563,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Course"
-        ],
+        "tags": ["Course"],
         "parameters": [
           {
             "name": "id",
@@ -634,9 +606,7 @@
         }
       },
       "patch": {
-        "tags": [
-          "Course"
-        ],
+        "tags": ["Course"],
         "parameters": [
           {
             "name": "id",
@@ -693,9 +663,7 @@
     },
     "/api/courses/{id}/students": {
       "get": {
-        "tags": [
-          "Course"
-        ],
+        "tags": ["Course"],
         "parameters": [
           {
             "name": "id",
@@ -752,9 +720,7 @@
     },
     "/api/courses/{id}/modules": {
       "get": {
-        "tags": [
-          "Course"
-        ],
+        "tags": ["Course"],
         "parameters": [
           {
             "name": "id",
@@ -811,9 +777,7 @@
     },
     "/api/modules/{id}": {
       "get": {
-        "tags": [
-          "Module"
-        ],
+        "tags": ["Module"],
         "parameters": [
           {
             "name": "id",
@@ -839,9 +803,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Module"
-        ],
+        "tags": ["Module"],
         "parameters": [
           {
             "name": "id",
@@ -891,9 +853,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Module"
-        ],
+        "tags": ["Module"],
         "parameters": [
           {
             "name": "id",
@@ -936,9 +896,7 @@
         }
       },
       "patch": {
-        "tags": [
-          "Module"
-        ],
+        "tags": ["Module"],
         "parameters": [
           {
             "name": "id",
@@ -1002,9 +960,7 @@
     },
     "/api/modules/{id}/activities": {
       "get": {
-        "tags": [
-          "Module"
-        ],
+        "tags": ["Module"],
         "parameters": [
           {
             "name": "id",
@@ -1035,9 +991,7 @@
     },
     "/api/modules": {
       "post": {
-        "tags": [
-          "Module"
-        ],
+        "tags": ["Module"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1078,9 +1032,7 @@
     },
     "/api/temp/{username}/ping": {
       "get": {
-        "tags": [
-          "Temp"
-        ],
+        "tags": ["Temp"],
         "parameters": [
           {
             "name": "username",
@@ -1118,9 +1070,7 @@
     },
     "/api/users/{username}": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "username",
@@ -1145,9 +1095,7 @@
         }
       },
       "patch": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "username",
@@ -1203,9 +1151,7 @@
     },
     "/api/users/{username}/course": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "username",
@@ -1232,9 +1178,7 @@
     },
     "/api/users": {
       "get": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "operationId": "GetUsers",
         "parameters": [
           {
@@ -1288,9 +1232,7 @@
         }
       },
       "post": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1331,9 +1273,7 @@
     },
     "/api/users/{id}": {
       "put": {
-        "tags": [
-          "User"
-        ],
+        "tags": ["User"],
         "parameters": [
           {
             "name": "id",
@@ -1540,11 +1480,7 @@
         "additionalProperties": false
       },
       "ModuleCreateDto": {
-        "required": [
-          "courseId",
-          "description",
-          "name"
-        ],
+        "required": ["courseId", "description", "name"],
         "type": "object",
         "properties": {
           "name": {
@@ -1644,15 +1580,7 @@
         "additionalProperties": false
       },
       "OperationType": {
-        "enum": [
-          "Add",
-          "Remove",
-          "Replace",
-          "Move",
-          "Copy",
-          "Test",
-          "Invalid"
-        ],
+        "enum": ["Add", "Remove", "Replace", "Move", "Copy", "Test", "Invalid"],
         "type": "string",
         "format": "int32"
       },
@@ -1680,10 +1608,7 @@
         "additionalProperties": false
       },
       "UserAuthModel": {
-        "required": [
-          "password",
-          "userName"
-        ],
+        "required": ["password", "userName"],
         "type": "object",
         "properties": {
           "userName": {
@@ -1698,12 +1623,7 @@
         "additionalProperties": false
       },
       "UserCreateDto": {
-        "required": [
-          "email",
-          "name",
-          "password",
-          "username"
-        ],
+        "required": ["email", "name", "password", "username"],
         "type": "object",
         "properties": {
           "name": {
@@ -1751,9 +1671,7 @@
         "additionalProperties": false
       },
       "UserUpdateDto": {
-        "required": [
-          "id"
-        ],
+        "required": ["id"],
         "type": "object",
         "properties": {
           "id": {
@@ -1785,9 +1703,7 @@
         "additionalProperties": false
       },
       "UsernameDto": {
-        "required": [
-          "username"
-        ],
+        "required": ["username"],
         "type": "object",
         "properties": {
           "username": {

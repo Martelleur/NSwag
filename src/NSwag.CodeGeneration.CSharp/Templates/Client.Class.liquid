@@ -157,28 +157,12 @@
             throw new System.ArgumentNullException("{{ parameter.VariableName }}");
 
 {%         endif -%}
-{%     endfor -%}
-
-
-{% for parameter in operation.PathParameters %}
-    // Debug: Parameter Name = {{ parameter.VariableName }}
-    // Debug: IsNullable = {{ parameter.IsNullable }}
-    // Debug: IsRequired = {{ parameter.IsRequired }}
-    // Debug: Kind = {{ parameter.Kind }}
-    // Debug: Style = {{ parameter.Style }}
-    // Debug: Schema = {{ parameter.Schema }}
-    // Debug: Schema.HasActualProperties = {{ parameter.Schema.HasActualProperties }}
-    // Debug: Schema.Pattern = {{ parameter.Schema.Pattern }}
-    // Debug: Type = {{ parameter }}
-{% endfor %}
-
-{% for parameter in operation.PathParameters %}
-    {% if parameter.Schema.Pattern %}
+{%         if parameter.Schema.Pattern %}
         if (!System.Text.RegularExpressions.Regex.IsMatch({{ parameter.VariableName }}, "{{ parameter.Schema.Pattern }}"))
             throw new System.ArgumentException("Parameter '{{ parameter.VariableName }}' does not match the required pattern '{{ parameter.Schema.Pattern }}'.");
-    {% endif %}
-{% endfor %}
 
+{%         endif -%}
+{%     endfor -%}
 
 {%     for parameter in operation.QueryParameters -%}
 {%         if parameter.IsNullable == false and parameter.IsRequired -%}

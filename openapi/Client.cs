@@ -85,18 +85,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -178,18 +166,6 @@ namespace MyNamespace
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -277,18 +253,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -368,18 +332,6 @@ namespace MyNamespace
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -465,7 +417,6 @@ namespace MyNamespace
         public virtual async System.Threading.Tasks.Task<ActivityDto> ActivitiesPOSTAsync(ActivityCreateDto body, System.Threading.CancellationToken cancellationToken)
         {
 
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -548,7 +499,6 @@ namespace MyNamespace
         /// <exception cref="ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<string> LoginAsync(UserAuthModel body, System.Threading.CancellationToken cancellationToken)
         {
-
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -633,7 +583,6 @@ namespace MyNamespace
         public virtual async System.Threading.Tasks.Task LogoutAsync(TokenDto body, System.Threading.CancellationToken cancellationToken)
         {
 
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -710,7 +659,6 @@ namespace MyNamespace
         /// <exception cref="ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<string> RefreshAsync(TokenDto body, System.Threading.CancellationToken cancellationToken)
         {
-
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -795,7 +743,6 @@ namespace MyNamespace
         public virtual async System.Threading.Tasks.Task RolesAsync(System.Threading.CancellationToken cancellationToken)
         {
 
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -868,7 +815,6 @@ namespace MyNamespace
         /// <exception cref="ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<CourseDto>> CoursesAllAsync(string search, System.DateTimeOffset? startDate, System.DateTimeOffset? endDate, int? page, int? limit, System.Collections.Generic.IEnumerable<SortParams> sortFields, System.Threading.CancellationToken cancellationToken)
         {
-
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -975,7 +921,6 @@ namespace MyNamespace
         public virtual async System.Threading.Tasks.Task<CourseDto> CoursesPOSTAsync(CourseCreateDto body, System.Threading.CancellationToken cancellationToken)
         {
 
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1061,18 +1006,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1154,18 +1087,6 @@ namespace MyNamespace
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1253,18 +1174,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1345,18 +1254,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1436,18 +1333,6 @@ namespace MyNamespace
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1546,18 +1431,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1655,18 +1528,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1748,18 +1609,6 @@ namespace MyNamespace
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -1847,18 +1696,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -1938,18 +1775,6 @@ namespace MyNamespace
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2037,18 +1862,6 @@ namespace MyNamespace
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2129,7 +1942,6 @@ namespace MyNamespace
         /// <exception cref="ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<ModuleDto> ModulesPOSTAsync(ModuleCreateDto body, System.Threading.CancellationToken cancellationToken)
         {
-
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2216,20 +2028,8 @@ namespace MyNamespace
             if (username == null)
                 throw new System.ArgumentNullException("username");
 
-        // Debug: Parameter Name = username
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = ^[a-zA-Z0-9_]+$
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
             if (!System.Text.RegularExpressions.Regex.IsMatch(username, "^[a-zA-Z0-9_]+$"))
                 throw new System.ArgumentException("Parameter 'username' does not match the required pattern '^[a-zA-Z0-9_]+$'.");
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2314,18 +2114,6 @@ namespace MyNamespace
             if (username == null)
                 throw new System.ArgumentNullException("username");
 
-        // Debug: Parameter Name = username
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2408,18 +2196,6 @@ namespace MyNamespace
             if (username == null)
                 throw new System.ArgumentNullException("username");
 
-        // Debug: Parameter Name = username
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2499,18 +2275,6 @@ namespace MyNamespace
         {
             if (username == null)
                 throw new System.ArgumentNullException("username");
-
-        // Debug: Parameter Name = username
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2592,7 +2356,6 @@ namespace MyNamespace
         /// <exception cref="ApiException">A server side error occurred.</exception>
         public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<UserDto>> GetUsersAsync(string role, int? page, int? limit, System.Collections.Generic.IEnumerable<SortParams> sortFields, System.Threading.CancellationToken cancellationToken)
         {
-
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -2691,7 +2454,6 @@ namespace MyNamespace
         public virtual async System.Threading.Tasks.Task<UserDto> UsersPOSTAsync(UserCreateDto body, System.Threading.CancellationToken cancellationToken)
         {
 
-
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2776,18 +2538,6 @@ namespace MyNamespace
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
-
-        // Debug: Parameter Name = id
-        // Debug: IsNullable = false
-        // Debug: IsRequired = true
-        // Debug: Kind = 3
-        // Debug: Style = 0
-        // Debug: Schema = NJsonSchema.JsonSchema
-        // Debug: Schema.HasActualProperties = false
-        // Debug: Schema.Pattern = 
-        // Debug: Type = NSwag.CodeGeneration.CSharp.Models.CSharpParameterModel
-
-    
 
             var client_ = _httpClient;
             var disposeClient_ = false;

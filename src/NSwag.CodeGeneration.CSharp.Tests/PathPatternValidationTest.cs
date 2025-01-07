@@ -82,23 +82,13 @@ namespace NSwag.CodeGeneration.CSharp.Tests
     throw new System.ArgumentException(""Parameter 'pathVariable' does not match the required pattern '^[a-zA-Z0-9_]+$'."");";
 
 
-        private static void ValidatePatternValueMock(string pathVariable, string regexPattern)
+        private static void ValidatePathPatternMock(string pathVariable, string regexPattern)
         {
             if (!System.Text.RegularExpressions.Regex.IsMatch(pathVariable, regexPattern))
                 throw new System.ArgumentException(
                     $"Parameter 'pathVariable' does not match the required pattern '{regexPattern}'."
                 );
         }
-
-        private static string NormalizeWhitespace(string input)
-        {
-            return string.Join(
-                " ",
-                input.Split(separator, StringSplitOptions.RemoveEmptyEntries)
-            );
-        }
-
-        private static readonly char[] separator = ['\r', '\n', '\t', ' '];
 
         [Fact]
         public async Task When_path_parameter_have_pattern_field()
@@ -134,7 +124,6 @@ namespace NSwag.CodeGeneration.CSharp.Tests
             Assert.DoesNotContain(generatedCode, code);
         }
 
-        // Test cases for valid pathVariables with different regex patterns
         [Theory]
         [InlineData("User123", "^[a-zA-Z0-9_]+$")] // Alphanumeric and underscores
         [InlineData("User-123", "^[a-zA-Z0-9_-]+$")] // Alphanumeric, underscores, and dashes
@@ -147,12 +136,11 @@ namespace NSwag.CodeGeneration.CSharp.Tests
         {
             // Arrange & Act & Assert
             var exception = Record.Exception(
-                () => ValidatePatternValueMock(pathVariable, regexPattern)
+                () => ValidatePathPatternMock(pathVariable, regexPattern)
             );
-            Assert.Null(exception); // Assert no exception
+            Assert.Null(exception);
         }
 
-        // Test cases for invalid pathVariables with different regex patterns
         [Theory]
         [InlineData("User@123", "^[a-zA-Z0-9_]+$")] // Alphanumeric and underscores
         [InlineData("User Name", "^[a-zA-Z0-9_-]+$")] // Alphanumeric, underscores, and dashes
@@ -165,11 +153,20 @@ namespace NSwag.CodeGeneration.CSharp.Tests
         {
             // Arrange & Act & Assert
             var exception = Assert.Throws<ArgumentException>(
-                () => ValidatePatternValueMock(pathVariable, regexPattern)
+                () => ValidatePathPatternMock(pathVariable, regexPattern)
             );
             Assert.Contains(
                 $"Parameter 'pathVariable' does not match the required pattern",
                 exception.Message
+            );
+        }
+
+        private static string NormalizeWhitespace(string input)
+        {
+            char[] separators = ['\r', '\n', '\t', ' '];
+            return string.Join(
+                " ",
+                input.Split(separators, StringSplitOptions.RemoveEmptyEntries)
             );
         }
     }

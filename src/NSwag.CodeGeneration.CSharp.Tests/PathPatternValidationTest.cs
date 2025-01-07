@@ -78,8 +78,9 @@ namespace NSwag.CodeGeneration.CSharp.Tests
 
         //This string if statement is exactly the same as the if statement in ValidatePatternValueMock method.
         private string generatedCode =
-            @"if (!System.Text.RegularExpressions.Regex.IsMatch(pathVariable, ""^[a-zA-Z0-9_]+$""))
-                throw new System.ArgumentException(""Parameter 'pathVariable' does not match the required pattern '^[a-zA-Z0-9_]+$'."");";
+@"if (!System.Text.RegularExpressions.Regex.IsMatch(pathVariable, ""^[a-zA-Z0-9_]+$""))
+    throw new System.ArgumentException(""Parameter 'pathVariable' does not match the required pattern '^[a-zA-Z0-9_]+$'."");";
+
 
         private static void ValidatePatternValueMock(string pathVariable, string regexPattern)
         {
@@ -89,31 +90,44 @@ namespace NSwag.CodeGeneration.CSharp.Tests
                 );
         }
 
+        private static string NormalizeWhitespace(string input)
+        {
+            return string.Join(
+                " ",
+                input.Split(separator, StringSplitOptions.RemoveEmptyEntries)
+            );
+        }
+
+        private static readonly char[] separator = ['\r', '\n', '\t', ' '];
+
         [Fact]
         public async Task When_path_parameter_have_pattern_field()
         {
+            // Arrange
             var document = await OpenApiDocument.FromJsonAsync(generateSpec(withPattern: true));
-
-            // Act
             var generator = new CSharpClientGenerator(
                 document,
                 new CSharpClientGeneratorSettings()
             );
+
+            // Act
             var code = generator.GenerateFile();
+            
             // Assert
-            Assert.Contains(generatedCode, code);
+            Assert.Contains(NormalizeWhitespace(generatedCode), NormalizeWhitespace(code));
         }
 
         [Fact]
         public async Task When_path_parameter_not_have_pattern_field()
         {
+            // Arrange
             var document = await OpenApiDocument.FromJsonAsync(generateSpec(withPattern: false));
-
-            // Act
             var generator = new CSharpClientGenerator(
                 document,
                 new CSharpClientGeneratorSettings()
             );
+
+            // Act
             var code = generator.GenerateFile();
 
             // Assert

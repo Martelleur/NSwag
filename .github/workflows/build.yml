@@ -19,7 +19,6 @@ name: build
 on:
   push:
     branches:
-      - issue_3145
       - master
       - main
     tags:
@@ -48,7 +47,7 @@ jobs:
             9.0
       - uses: actions/checkout@v4
       - name: 'Run: Compile, Test, Pack, Publish'
-        run: ./build.cmd Compile Test Pack
+        run: ./build.cmd Compile Test Pack Publish
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
           MYGET_API_KEY: ${{ secrets.MYGET_API_KEY }}
@@ -85,7 +84,7 @@ jobs:
             9.0
       - uses: actions/checkout@v4
       - name: 'Run: Compile, Test, Pack, Publish'
-        run: ./build.cmd Compile Test Pack
+        run: ./build.cmd Compile Test Pack Publish
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
           MYGET_API_KEY: ${{ secrets.MYGET_API_KEY }}
@@ -102,7 +101,7 @@ jobs:
             9.0
       - uses: actions/checkout@v4
       - name: 'Run: Compile, Test, Pack, Publish'
-        run: ./build.cmd Compile Test Pack
+        run: ./build.cmd Compile Test Pack Publish
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
           MYGET_API_KEY: ${{ secrets.MYGET_API_KEY }}

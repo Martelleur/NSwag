@@ -19,7 +19,7 @@ name: build
 on:
   push:
     branches:
-      - C#-Code-Generation-doesnt-validate-patterns-#3145
+      - issue_3145
       - master
       - main
     tags:

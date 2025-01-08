@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>server</name>
+    </assembly>
+    <members>
+        <member name="T:server.Constants.Api">
+            <summary>
+            Containing api version constants.
+            </summary>
+        </member>
+        <member name="T:server.Constants.RoutePath">
+            <summary>
+            Containing api path constants for API version 1. 
+            </summary>
+        </member>
+        <member name="T:server.Controllers.MainController">
+            <summary>
+            Controller class used for endpoint <see cref="F:server.Constants.RoutePath.Main"/>.
+            </summary>
+        </member>
+        <member name="M:server.Controllers.MainController.HelloWorld">
+            <summary>
+            Hello world end point.
+            </summary>
+            <returns>A <see cref="T:server.DTO.HelloWorldDTO"/></returns>
+            <response code="200">With the hello world message</response>
+        </member>
+        <member name="M:server.Controllers.MainController.Ping">
+            <summary>
+            A ping end point.
+            </summary>
+            <returns>A <see cref="T:server.DTO.PingDTO"/></returns>
+            <response code="200">With the hello world message</response>
+        </member>
+        <member name="T:server.Controllers.TestControllerVersionOne">
+            <summary>
+            Controller class used for endpoint <see cref="F:server.Constants.RoutePath.Test"/>.
+            </summary>
+        </member>
+        <member name="M:server.Controllers.TestControllerVersionOne.PingUserName(System.String)">
+            <summary>
+            Used to ping a valid user name.
+            </summary>
+            <param name="userName">A <see cref="T:System.String"/></param>
+            <returns>A <see cref="T:server.DTO.UserNameDTO"/></returns>
+            <response code="200">With the user name</response>
+        </member>
+        <member name="T:server.Controllers.TestControllerVersionTwo">
+            <summary>
+            Controller class used for endpoint <see cref="F:server.Constants.RoutePath.Test"/>.
+            </summary>
+        </member>
+        <member name="M:server.Controllers.TestControllerVersionTwo.PingUserName(System.String)">
+            <summary>
+            Used to ping a valid user name.
+            </summary>
+            <param name="userName">A <see cref="T:System.String"/></param>
+            <returns>A <see cref="T:server.DTO.UserNameDTO"/></returns>
+            <response code="200">With the user name</response>
+        </member>
+        <member name="T:server.DTO.HelloWorldDTO">
+            <summary>
+            A hello world DTO. 
+            </summary>
+        </member>
+        <member name="P:server.DTO.HelloWorldDTO.Value">
+            <summary>
+            Value of the hello world object.
+            </summary>
+        </member>
+        <member name="T:server.DTO.PingDTO">
+            <summary>
+            A ping DTO.
+            </summary>
+        </member>
+        <member name="P:server.DTO.PingDTO.Value">
+            <summary>
+            The value of the ping
+            </summary>
+        </member>
+        <member name="T:server.DTO.UserNameDTO">
+            <summary>
+            A DTO containing user name 
+            </summary>
+        </member>
+        <member name="P:server.DTO.UserNameDTO.UserName">
+            <summary>
+            The value of the user name
+            </summary>
+        </member>
+        <member name="T:server.Middlewares.RequestLoggingMiddleware">
+            <summary>
+            A log middleware
+            </summary>
+        </member>
+        <member name="M:server.Middlewares.RequestLoggingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Constructs a RequestLoggingMiddleware 
+            </summary>
+            <param name="next"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:server.Middlewares.RequestLoggingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invoke the middleware
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:server.Program">
+            <summary>
+            Entry point of the program.
+            </summary>
+        </member>
+        <member name="M:server.Program.Main(System.String[])">
+            <summary>
+            Main method of program.
+            </summary>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>
